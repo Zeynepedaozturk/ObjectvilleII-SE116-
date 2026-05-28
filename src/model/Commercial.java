@@ -9,5 +9,6 @@ public class Commercial extends Zone {
     @Override
     public void produce() {
         output = (level + 1) * 12;
+        this.lastTickOutput = this.output;
     }
 }
