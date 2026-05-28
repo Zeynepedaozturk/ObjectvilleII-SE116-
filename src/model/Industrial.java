@@ -9,5 +9,6 @@ public class Industrial extends Zone {
     @Override
     public void produce() {
         output = (level + 1) * 15;
+        this.lastTickOutput = this.output;
     }
 }
